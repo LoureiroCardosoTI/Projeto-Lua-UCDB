@@ -1,10 +1,4 @@
 # Projeto-Lua-UCDB
-Claro! Vou usar exemplos ainda mais básicos e acessíveis para ilustrar as principais características da linguagem Lua. Vou simplificar os conceitos e os códigos para torná-los mais fáceis de entender.
-
----
-
-## 1. **Facilidade de Integração**
-
 ### O que é?
 
 Lua pode ser usada para adicionar pequenos trechos de código a programas escritos em outras linguagens. É como adicionar uma função extra ao seu programa principal.
