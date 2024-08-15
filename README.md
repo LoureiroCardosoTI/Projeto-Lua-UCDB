@@ -64,28 +64,37 @@ print("Hobbies: " .. table.concat(person.hobbies, ", "))
 As tabelas em Lua são flexíveis e permitem que você armazene e organize dados de maneira simples e eficiente, substituindo várias estruturas de dados.
 
 ---
-3. Metaprogramação e Metatables
-O que é?
+
+### 3. **Metaprogramação e Metatables**
+
+**O que é?**
 Metaprogramação em Lua permite que você defina como as tabelas se comportam em diferentes situações, como quando são somadas ou indexadas. Isso é feito usando "metatables", que são tabelas especiais usadas para alterar o comportamento padrão das tabelas.
 
-Por que é diferente?
+**Por que é diferente?**
 Esse recurso permite personalizar e estender a funcionalidade de tabelas de maneiras que não são possíveis em muitas outras linguagens. Por exemplo, você pode definir como uma tabela deve reagir a operações matemáticas ou a consultas de dados.
 
-4. Garbage Collection
-O que é?
+### 4. **Garbage Collection**
+
+**O que é?**
 Lua possui um sistema automático de coleta de lixo, que gerencia a memória do programa sem que você precise fazer isso manualmente. O coletor de lixo detecta e remove a memória que não é mais usada pelo programa.
 
-Por que é diferente?
+**Por que é diferente?**
 Esse gerenciamento automático da memória ajuda a evitar vazamentos de memória e reduz a complexidade do código, já que você não precisa se preocupar em liberar memória manualmente. Isso torna a programação mais simples e menos propensa a erros.
 
-5. Sintaxe Leve e Simples
-O que é?
+### 5. **Sintaxe Leve e Simples**
+
+**O que é?**
 Lua tem uma sintaxe minimalista e direta, o que facilita a escrita e a leitura do código. A linguagem é projetada para ser fácil de aprender e usar, com uma quantidade reduzida de regras e construções complexas.
 
-Resumo
-Integração Simples: Lua se encaixa bem em outros programas, adicionando funcionalidades sem grandes mudanças.
-Tabelas Versáteis: Usa uma única estrutura para muitos tipos de dados, simplificando o gerenciamento de dados.
-Metaprogramação: Permite personalizar como as tabelas se comportam, adicionando flexibilidade.
-Garbage Collection: Gerencia a memória automaticamente, evitando problemas com vazamentos.
-Sintaxe Simples: Código fácil de escrever e entender, ideal para desenvolvimento rápido e eficiente.
+**Por que é diferente?**
+A simplicidade da sintaxe torna Lua uma ótima escolha para iniciantes e também para situações onde você precisa de um script rápido e eficiente. Menos complexidade significa menos erros e um código mais limpo e compreensível.
+
+### Resumo
+
+- **Integração Simples**: Lua se encaixa bem em outros programas, adicionando funcionalidades sem grandes mudanças.
+- **Tabelas Versáteis**: Usa uma única estrutura para muitos tipos de dados, simplificando o gerenciamento de dados.
+- **Metaprogramação**: Permite personalizar como as tabelas se comportam, adicionando flexibilidade.
+- **Garbage Collection**: Gerencia a memória automaticamente, evitando problemas com vazamentos.
+- **Sintaxe Simples**: Código fácil de escrever e entender, ideal para desenvolvimento rápido e eficiente.
+
 Esses aspectos fazem de Lua uma linguagem poderosa e flexível, adequada para uma ampla gama de aplicações, desde scripts simples até sistemas complexos e integrados.
