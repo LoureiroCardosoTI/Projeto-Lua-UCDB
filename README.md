@@ -100,7 +100,7 @@ A simplicidade da sintaxe torna Lua uma ótima escolha para iniciantes e também
 Esses aspectos fazem de Lua uma linguagem poderosa e flexível, adequada para uma ampla gama de aplicações, desde scripts simples até sistemas complexos e integrados.
 
 
-Aqui está a sintaxe completa de Lua na notação BNF estendida. (Ela não descreve as precedências dos operadores.)
+**Aqui está a sintaxe completa de Lua na notação BNF estendida. (Ela não descreve as precedências dos operadores.)**
 
 	trecho ::= {comando [`;´]} [ultimocomando [`;´]]
 
