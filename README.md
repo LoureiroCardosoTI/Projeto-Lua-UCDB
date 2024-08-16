@@ -89,6 +89,8 @@ Lua tem uma sintaxe minimalista e direta, o que facilita a escrita e a leitura d
 **Por que é diferente?**
 A simplicidade da sintaxe torna Lua uma ótima escolha para iniciantes e também para situações onde você precisa de um script rápido e eficiente. Menos complexidade significa menos erros e um código mais limpo e compreensível.
 
+Lua é uma linguagem que diferencia minúsculas de maiúsculas: and é uma palavra reservada, mas And e AND são dois nomes válidos diferentes. Como convenção, nomes que começam com um sublinhado seguido por letras maiúsculas (tais como _VERSION) são reservados para variáveis globais internas usadas por Lua.
+
 ### Resumo
 
 - **Integração Simples**: Lua se encaixa bem em outros programas, adicionando funcionalidades sem grandes mudanças.
