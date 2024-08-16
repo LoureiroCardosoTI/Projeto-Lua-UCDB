@@ -98,3 +98,63 @@ A simplicidade da sintaxe torna Lua uma ótima escolha para iniciantes e também
 - **Sintaxe Simples**: Código fácil de escrever e entender, ideal para desenvolvimento rápido e eficiente.
 
 Esses aspectos fazem de Lua uma linguagem poderosa e flexível, adequada para uma ampla gama de aplicações, desde scripts simples até sistemas complexos e integrados.
+
+
+Aqui está a sintaxe completa de Lua na notação BNF estendida. (Ela não descreve as precedências dos operadores.)
+
+	trecho ::= {comando [`;´]} [ultimocomando [`;´]]
+
+	bloco ::= trecho
+
+	comando ::=  listavar `=´ listaexp | 
+		 chamadadefuncao | 
+		 do bloco end | 
+		 while exp do bloco end | 
+		 repeat bloco until exp | 
+		 if exp then bloco {elseif exp then bloco} [else bloco] end | 
+		 for Nome `=´ exp `,´ exp [`,´ exp] do bloco end | 
+		 for listadenomes in listaexp do bloco end | 
+		 function nomedafuncao corpodafuncao | 
+		 local function Nome corpodafuncao | 
+		 local listadenomes [`=´ listaexp] 
+
+	ultimocomando ::= return [listaexp] | break
+
+	nomedafuncao ::= Nome {`.´ Nome} [`:´ Nome]
+
+	listavar ::= var {`,´ var}
+
+	var ::=  Nome | expprefixo `[´ exp `]´ | expprefixo `.´ Nome 
+
+	listadenomes ::= Nome {`,´ Nome}
+
+	listaexp ::= {exp `,´} exp
+
+	exp ::=  nil | false | true | Numero | Cadeia | `...´ | funcao | 
+		 expprefixo | construtortabela | exp opbin exp | opunaria exp 
+
+	expprefixo ::= var | chamadadefuncao | `(´ exp `)´
+
+	chamadadefuncao ::=  expprefixo args | expprefixo `:´ Nome args 
+
+	args ::=  `(´ [listaexp] `)´ | construtortabela | Cadeia 
+
+	funcao ::= function corpodafuncao
+
+	corpodafuncao ::= `(´ [listapar] `)´ bloco end
+
+	listapar ::= listadenomes [`,´ `...´] | `...´
+
+	construtortabela ::= `{´ [listadecampos] `}´
+
+	listadecampos ::= campo {separadordecampos campo} [separadordecampos]
+
+	campo ::= `[´ exp `]´ `=´ exp | Nome `=´ exp | exp
+
+	separadordecampos ::= `,´ | `;´
+
+	opbin ::= `+´ | `-´ | `*´ | `/´ | `^´ | `%´ | `..´ | 
+		 `<´ | `<=´ | `>´ | `>=´ | `==´ | `~=´ | 
+		 and | or
+
+	opunaria ::= `-´ | not | `#´
