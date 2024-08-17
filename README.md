@@ -100,5 +100,3 @@ Lua é uma linguagem que diferencia minúsculas de maiúsculas: and é uma palav
 - **Sintaxe Simples**: Código fácil de escrever e entender, ideal para desenvolvimento rápido e eficiente.
 
 Esses aspectos fazem de Lua uma linguagem poderosa e flexível, adequada para uma ampla gama de aplicações, desde scripts simples até sistemas complexos e integrados.
-
-	opunaria ::= `-´ | not | `#´
